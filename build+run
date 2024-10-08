@@ -4,5 +4,5 @@ echo "Reading $fname..."
 echo "Starting compilation..."
 
 printf "Output:\n---------------------------------\n"
-eval "g++ $fname.cpp -o $oname.run"
-eval "./$oname.run"
+eval "g++ $fname.cpp -o ./bin/$oname.run"
+eval "./bin/$oname.run"
