@@ -1,0 +1,8 @@
+read -p "Filename To Compile > " fname
+read -p "Output Filename > " oname
+echo "Reading $fname..."
+echo "Starting compilation..."
+
+printf "Output:\n---------------------------------\n"
+eval "g++ $fname.cpp -o $oname.run"
+eval "./$oname.run"
